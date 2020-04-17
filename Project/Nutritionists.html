@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Nutritionist</title>
+<meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:50px">Sample Text</h1>
+            <h3>Sample Text</h3>
+        </div>
+    </div>
+    <form>
+        <!--
+            Ingredient input.
+        -->
+        <input type="text" id="inputAnIngrediant" name = "input"
+        placeholder="Enter an ingrediant first">
+        <br>
+        <!--
+            Occasion selector.
+        -->
+        <div class="multiselect">
+          <div class="selectBox" onclick="dropdown()">
+            <select>
+              <option>Select an option</option>
+            </select>
+            <div class="overSelect"></div>
+          </div>
+          <div id="checkboxes">
+            <label for="one">
+                <p class="text"><input type="checkbox" id="one" /> Birthday Party</p></label>
+            <label for="two">
+                <p class="text"><input type="checkbox" id="two" /> Graduation</p></label>
+            <label for="three">
+                <p class="text"><input type="checkbox" id="three" /> Movie Night</p></label>
+            <label for="four">
+                <p class="text"><input type="checkbox" id="four" /> Interview Passed</p></label>
+          </div>
+        </div>
+        <!--
+        Submit button.
+        -->
+        <input type="submit" value="Get your recipes">
+      </form>
+    <script src="functions.js"> </script>
+</body>
+</html>
