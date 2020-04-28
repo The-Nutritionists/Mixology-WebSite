@@ -10,10 +10,19 @@
 .hero-text {
     text-align: center;
     position: fixed;
-    top:50%;
+    font-family: Arial;
+    top:30%;
     left:50%;
     transform:translate(-50%, -50%);
-    color: white;
+    background-color: rgba(128, 128, 128, 0.685);
+    color: rgb(218, 215, 90);
+}
+
+.label-text {
+    text-align: left;
+    position: fixed;
+    font-family: Arial;
+    color: #45a049;
 }
 
 /* .button {
@@ -86,7 +95,9 @@ style for dropdown checkboxes
 
 #checkboxes {
   display: none;
-  border: 1px #dadada solid;
+  border: 1px #45a049 solid;
+  font-family: Arial;
+  font-size: 16px;
 }
 
 #text {
@@ -95,5 +106,8 @@ style for dropdown checkboxes
   word-spacing: 0.2px;
   line-height: 0.8;
 }
-  
+
+#inputAnIngredient {
+  width: 200px;
+}
 
