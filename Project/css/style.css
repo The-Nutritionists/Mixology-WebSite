@@ -1,3 +1,31 @@
+header {
+  background: teal;
+  padding: 20px;
+  width:20;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  width:10%;
+  color: white;
+  padding: 7px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .hero-image {
     background-image: url("../Images/pexels-photo-1128678.jpeg");
     background-position: center;
@@ -16,18 +44,16 @@
     color: white;
 }
 
-/* .button {
-    background-color: #555555;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-} */
+button {
+  width:12%;
+  background-color: #555555;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 
 /*
@@ -43,8 +69,19 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
+input[type=reset] {
+  width:7%;
+  background-color: #555555;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 input[type=submit] {
-    width:15%;
+    width:10%;
     background-color: #555555;
     color: white;
     padding: 14px 20px;
@@ -62,7 +99,6 @@ input[type=submit]:hover {
 /* 
 style for dropdown checkboxes
 */
-
 #multiselect {
   width: 200px;
 }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Nutritionist</title>
+<meta charset="utf-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../functions.js"> </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <!-- <script>
+        axios.get('https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list')
+            .then(response => {
+                var drinkList = response.data//
+                for(let x of Object.keys(drinkList)) {
+                    console.log(x);
+                }
+            
+                console.log(response.data);
+            })
+            .catch(error => console.error(error));
+    </script>
+    -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Nutritionists.html">Home</a></li>
+                <li><a href="Map.html">Map</a></li>
+                <li><a href="DrinkLibrary.html">DrinkLibrary</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:50px">Sample Text</h1>
+            <h3>Sample Text</h3>
+        </div>
+    </div>
+    <!-- <form> -->
+        <!--
+            Ingredient input.
+        -->
+        <form action="Result.html">
+            <input type="text" id="inputAnIngrediant" name = "input"
+            placeholder="Enter an ingrediant first">
+            <!-- button onclick="cockTailSearch()">Get Your Cocktail</button> -->
+            <button onclick="passValue()">Get Your Cocktail</button>
+             <br>
+        </form>
+
+        
+        <!--
+            Occasion selector.
+        -->
+        <div id="multiselect">
+            <div id="selectBox" onclick="dropdown()">
+                <select>
+                <option>Select an option</option>
+                </select>
+                <div id="overSelect"></div>
+            </div>
+            <div id="checkboxes">
+                <div id="text">
+                    <input type="checkbox" >Birthday Party</input><br>
+                    <input type="checkbox" >Graduation</input><br>
+                    <input type="checkbox" >Movie Night</input><br>
+                    <input type="checkbox" >Passing Interview</input><br>
+                </div>
+            </div>
+        </div>
+
+        <!--
+        Submit button.
+        -->
+        <input type="reset" value="Reset">
+        <!-- <input type="submit" value="Get your recipes"> -->
+        <!-- </form> -->
+        <button onclick="listAllIngredients()">List All Ingredients</button>
+       
+</body>
+</html>
